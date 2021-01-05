@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitri</title>
+    <link rel="icon" href="media/icon2.png">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Flipster Carousel -->
+    <link rel="stylesheet" href="js/jquery.flipster.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <!-- Overrides propios -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container"> <!--Container Boostrap-->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top"> <!--Nombres de clases default boostrap, no aplica BEM-->
+        <a class="navbar-brand d-flex justify-content-start" href="#"><img src="media/logo_web.png" alt="Logo" style="max-width: 25vw;"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav col-12 d-flex justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#videos">Videos</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shows
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#central">Central</a>
+                        <a class="dropdown-item" href="#cerca">Magia de Cerca</a>
+                        <a class="dropdown-item" href="#virtual">Show Virtual</a>
+                    </div>
+                  </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#shows">Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <video src="media/videointro.webm" class="videoIntro" autoplay muted loop></video>
+    </div>
+    <br id="bio">
+    <section class="row link biografia">
+        <div class="col-12">
+            <h2 class="textoTitulo gradienteLogo">
+                Biografía
+            </h2>
+        </div>
+        <div class="card shadow">
+            <div class="row">
+                <div class="col-md-5 card-img-top foto">
+                    <img src="media/biografia_web.jpg" alt="Imagen del artista" class="foto" style="padding: 15px;">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h4 class="textoTitulo">Sobre el artista:</h4>
+                        <h6 class="textoCuerpo">Dimitri nació en Ucrania, creció en Israel, vive en Argentina desde 2012. Es mago y mentalista. 
+                            <br><br>
+                            Durante su carrera logró llevar su espectáculo a casi 40 países, realizándolo en 5 idiomas. En 2017 ganó el segundo puesto en el Campeonato Latinoamericano de la Magia. En 2018 participó del Campeonato Mundial de Magia que se realizó en Corea del Sur y obtuvo el 6to puesto. El 2019 Dimitri actuó en Shanghái, en la gala de la empresa China ¨AliBaba¨. Fue uno de los artistas en el Edinburgh Fringe 2019 (festival de Arte más grande del mundo) y ha viajado durante el año siete veces a Moscú para realizar su espectáculo en los eventos más lujosos de Rusia. 
+                            <br><br>Dimitri ha estudiado psicología en la UBA y es cinturón negro en Judo. En su tiempo libre le gusta ver cine, escalar montañas, andar en bici y leer.</h6>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </section>
+    <br id="videos">
+    <section class="videos row">
+        <div class="col-12">
+            <h2 class="gradienteLogo">Videos</h2>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="card shadow">
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/_KRLLePIC78" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="card shadow">
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/9KBIallh6HE" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="card shadow">
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/zG12BXg1t14" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="card shadow">
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/EXgOic-S3wg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br id="shows">
+    <section class="row shows">
+        <div class="col-12">
+            <h2 class="gradienteLogo">Shows</h2>
+        </div>
+        <div class="card shadow">
+            <div class="row">
+                <div class="col-12 col-lg-3 card" >
+                    <img src="media/moscow-2_card.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textoTitulo">Central</h5>
+                    <p class="card-text textoCuerpo">Texto sencillo que vende el show central.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card">
+                    <img src="media/la_enramada_boda_helena-matias-2_card.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textoTitulo">Magia de Cerca</h5>
+                    <p class="card-text textoCuerpo">Texto sencillo que vende la magia de cerca.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card">
+                    <img src="media/ShowZoom26_card.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textoTitulo">Virtual</h5>
+                    <p class="card-text textoCuerpo">Texto sencillo que vende el show virtual.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 card">
+                    <img src="media/gala_aliexpress_shanghai-1_card.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title textoTitulo">Corporativo</h5>
+                    <p class="card-text textoCuerpo">Texto sencillo que vende el show corporativo.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br id="galeria">
+    <section class="row galeria">
+        <div class="col-12">
+            <h2 class="gradienteLogo">Galeria</h2>
+        </div>
+        <div id="coverflow" style="width: 90%; margin: auto;">
+            <ul class="flip-items">
+                <li><img src="galeria/bahia_chica_boda_maxi-fatima-1.png" class="foto"></li>
+                <li><img src="galeria/bahia_chica_boda_maxi-fatima-2.png" class="foto"></li>
+                <!-- <li><img src="galeria/bahia_chica_boda_maxi-fatima-3.png" class="foto"></li>  -->
+                <li><img src="galeria/circulo_militar.png" class="foto"></li>
+                <li><img src="galeria/gala_aliexpress_shanghai-1.png" class="foto"></li>
+                <li><img src="galeria/gala_aliexpress_shanghai-2.png" class="foto"></li>
+                <li><img src="galeria/hipodromo_de_san_isidro.png" class="foto"></li>
+                <li><img src="galeria/jack_ma_shanghai-1.png" class="foto"></li>
+                <li><img src="galeria/jack_ma_shanghai-2.png" class="foto"></li>
+                <li><img src="galeria/london_con_andriy_shevchenko-1.png" class="foto"></li>
+                <li><img src="galeria/london_con_andriy_shevchenko-2.png" class="foto"></li>
+                <li><img src="galeria/los_cipreses.png" class="foto"></li>
+                <!-- <li><img src="galeria/madero_sum.png" class="foto"></li> -->
+                <li><img src="galeria/magia_de_cerca_en_kazakstan.png" class="foto"></li>
+                <li><img src="galeria/mangrullo_holiday_inn.png" class="foto"></li>
+                <li><img src="galeria/la_enramada_boda_helena-matias-1.png" class="foto"></li>
+                <li><img src="galeria/la_enramada_boda_helena-matias-2.png" class="foto"></li>
+                <li><img src="galeria/moscow-1.png" class="foto"></li>
+                <li><img src="galeria/moscow-2.png" class="foto"></li>
+                <li><img src="galeria/moscow-3.png" class="foto"></li>
+                <li><img src="galeria/moscu_fin_de_ano.png" class="foto"></li>
+                <!-- <li><img src="galeria/moscu_plaza_roja.png" class="foto"></li> -->
+                <li><img src="galeria/puerto_madero.png" class="foto"></li>
+                <li><img src="galeria/quinta_tata.png" class="foto"></li>
+                <!-- <li><img src="galeria/quinta_villa_elisa.png" class="foto"></li> -->
+                <li><img src="galeria/saint_trope_francia.png" class="foto"></li>
+                <li><img src="galeria/salon_tel_viso_pilar-1.png" class="foto"></li>
+                <li><img src="galeria/salon_tel_viso_pilar-2.png" class="foto"></li>
+                <li><img src="galeria/unipersonal_en_espacio_mamut-1.png" class="foto"></li>
+                <li><img src="galeria/unipersonal_en_espacio_mamut-2.png" class="foto"></li>
+            </ul>
+        </div>
+        <script>
+            var coverflow = $("#coverflow").flipster({
+                loop: true,
+                autoplay: 2000,
+                pauseOnHover: true,
+                touch: true,
+                buttons: true,
+                scrollwheel: false,
+                buttonPrev: 'Ant.',
+                buttonNext: 'Prox.',
+            });
+        </script>    
+    </section>
+    <br id="contacto">
+    <div class="col-12">
+        <h2 class="gradienteLogo">Contacto</h2>
+    </div>
+    <section class="row contacto">
+        <div class="card shadow">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h4 class="textoTitulo">Complete el formulario para contactarse conmigo:</h4>
+                        <br>
+                        <form action="mailto:dimagician@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1">Email</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nombre</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Telefono</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+54-11-6885-9449">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Mensaje</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje." rows="5"></textarea>
+                            </div>
+                            <br>
+                            <input class="btn btn-primary" type="submit" value="Enviar">
+                            <input class="btn btn-primary" type="reset" value="Borrar">
+                          </form>
+                    </div>
+                </div>
+                <div class="col-md-5 card-img-top foto">
+                    <img src="media/kiev.jpg" alt="Imagen del artista" class="foto" style="padding: 15px;">
+                </div>            
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Boton Whastapp-->
+    <a href="https://api.whatsapp.com/send?phone=5491168859449&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20shows." class="float" target="_blank">
+        <img src="media/redes-whatsapp-icon.png" alt="">
+    </a>
+</body>
+</html>

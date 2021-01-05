@@ -1,0 +1,265 @@
+/* Hoja Estilos SASS - Dimitri */
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster&family=Merienda+One&family=Merienda:wght@400;700&family=Molle:ital@1&display=swap');
+/* Fuentes Importadas Google Fonts
+    font-family: 'Jura', sans-serif;
+    font-family: 'Spartan', sans-serif;
+    
+    font-family: 'Galada', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
+    font-family: 'Merienda One', cursive;
+    font-family: 'Molle', cursive;
+*/
+
+/* Paleta de Colores
+(#0A0A0A) Cod Gray - Dark shades - Use as the text color for dark-on-light designs, or as the background for inverted designs.
+(#151515) Cod Gray - Dark accent - Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
+(#FBC403) Supernova - Main brand color - This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
+(#FFDD03) School bus Yellow - Light accent - Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
+(#E7E6E6) Mercury - Light shades - Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
+*/
+
+/* Clases Macro */
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 62.5%;
+    margin: 0px;
+    background-color: #151515;
+    color: #FBC403;
+    width: 100%;
+}
+
+.gradienteLogo {
+    font-family: 'Lobster', Cursive;
+    background: -webkit-linear-gradient(#ffe201, #fec30d);
+    -webkit-text-stroke:  .2px #fec30d;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+.videoIntro{
+  position: relative;
+  object-fit: fill;
+  object-position: center;
+  right: 0;
+  top: -10px;
+  min-width: 100%;
+  width: 100%;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 5px;
+    .foto--fill{
+        object-fit:cover;
+        overflow: hidden; 
+        height: 100% ;
+    }
+}
+
+.biografia {
+    margin: 1vw;
+    .card{
+        background-image: url("../media/abstract-background-300.png");
+    }
+}
+
+.card {
+    border: 0px;
+    padding: 1vw;
+    background-color: #1d1e22;
+    color: #E7E6E6;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+  }
+
+.textoTitulo {
+    font-family: 'Lobster', Cursive;
+    color: #FBC403;
+}
+
+.textoCuerpo {
+    font-family: 'Jura', sans-serif;
+    line-height: 1.3;
+    color: #FBC403;
+}
+
+.videos {
+    margin: 1vw;
+    .row{
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    .card{
+        background-color: #0A0A0A;
+        margin: auto;
+        max-width: 600px;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        .iframeContainer{
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            iframe {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+.link{
+    position: static;
+    top: -180px;
+}
+
+.shows{
+    margin: 1vw;
+    .card{
+        width: 100%;
+        background-color: #1d1e22;
+        background-image: url('../media/pattern-shows.png');
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .row {
+            justify-content: space-around;
+            row-gap: 15px;
+            .card {
+                background-color: #0A0A0A;
+                max-width: 300px;
+                p{
+                    font-size: medium;
+                }
+                .btn-primary{
+                    background: -webkit-linear-gradient(#ffe201, #fec30d);
+                    border: #0A0A0A;
+                    font-family: 'Lobster';
+                    color: #0A0A0A;
+                }            
+            }
+        }
+    }
+    
+
+}
+
+.galeria {
+    margin: 1vw;
+}
+
+.contacto{
+    margin: 1vw;
+    .card{
+        width: 100%;
+        background-color: #1d1e22;
+        background-image: url('../media/pattern-contacto.png');
+        padding-top: 15px;
+        padding-bottom: 15px;
+        p{
+            font-size: medium;
+        }
+        .btn-primary{
+            background: -webkit-linear-gradient(#ffe201, #fec30d);
+            border: #0A0A0A;
+            font-family: 'Lobster';
+            color: #0A0A0A;
+        }            
+    }    
+}
+
+/*NAV*/
+.navbar-dark .navbar-nav{
+    .nav-link:link { text-decoration: none; color: #FBC403; } 
+    .nav-link:visited { text-decoration: none; color: #FBC403; }
+    .nav-link:hover { text-decoration: none; color: #FFDD03; }
+    .nav-link:active { text-decoration: none; color: #FBC403; }
+    text-align: end;
+}
+
+nav{
+    background: #151515;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid #FFDD03;
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    z-index: 9;
+
+    ul {
+        justify-content: space-around;
+        font-size: calc(10px + .5vw);
+        text-transform: uppercase;
+    }
+    
+    a:link { text-decoration: none; color: #FBC403; }
+    a:visited { text-decoration: none; color: #FBC403; }
+    a:hover { text-decoration: none; color: #FFDD03; }
+    a:active { text-decoration: none; color: #FBC403; }
+
+    .material-icons{
+        font-size: calc(10px + .5vw);
+    }
+
+    .dropdown-menu{
+        background: #0A0A0A;
+        font-family: 'Spartan', sans-serif;
+        font-size: calc(8px + .5vw);
+    }
+    .dropdown-item{
+        font-weight: 400;
+    }
+    .dropdown-item:hover { text-decoration: none; color: #003653; background-color: #1d1e22;}
+    
+}
+
+.code {
+    display: block;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 2em auto;
+    max-width: 30em;
+    font-size: 0.8em;
+    width: fit-content;
+    white-space: pre-wrap;
+  }
+
+  .flipster--coverflow .flipster__item {
+      max-width: 85%;
+      margin: auto;
+  }
+
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
