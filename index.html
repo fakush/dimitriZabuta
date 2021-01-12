@@ -35,6 +35,7 @@
     </script> -->
 </head>
 <body>
+<!-- Portada -->
 <video src="media/videointro.webm" autoplay muted loop></video>
 <nav class="navbar navbar-expand-md navbar-dark sticky-top"> <!--Nombres de clases default boostrap, no aplica BEM-->
     <a class="navbar-brand d-flex justify-content-start" href="#"><img src="media/logo_web.png" alt="Logo" style="max-width: 25vw; width: 100px;"></a>
@@ -74,11 +75,11 @@
 <header class="tituloPortada">
     <p>Show de Magia y Humor</p>
 </header>
-
-<div class="container"> <!--Container Boostrap-->
+<!-- Cuerpo Página -->
+<div class="container">
     <section id="opiniones">
         <a href="https://g.co/kgs/VJohRx" target="_blank">
-            <div id="myCarousel" class="carousel  carousel-fade" data-ride="carousel" data-interval="3000">
+            <div id="myCarousel" class="carousel  carousel-fade" data-ride="carousel" data-interval="4000">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -133,27 +134,42 @@
             </div> -->
             <div class="row">
                 <div class="col-12 col-lg-4 card shadow" >
-                    <img src="media/moscow-2_card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title textoTitulo">Central</h5>
-                    <p class="card-text textoCuerpo">Texto sencillo que vende el show central.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <img src="media/portada_show_central.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">                        
+                        <a class="textoTitulo" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <h5 class="botonAcordeon">Show Central<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </h5>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <p class="card-text textoCuerpo"><br>Show de Salón o Escenario. El show combina fascinante magia y humor. Una propuesta original, ideal para aquellos que buscan algo distinto. Es un show participativo que genera reacciones increíbles.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card shadow">
-                    <img src="media/la_enramada_boda_helena-matias-2_card.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title textoTitulo">Magia de Cerca</h5>
-                    <p class="card-text textoCuerpo">Texto sencillo que vende la magia de cerca.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <img src="media/portada_closeup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">                        
+                        <a class="textoTitulo" data-toggle="collapse" href="#collapseMDC" role="button" aria-expanded="false" aria-controls="collapseMDC">
+                            <h5 class="botonAcordeon">Magia de Cerca<i class="fa fa-plus" aria-hidden="true"></i>
+                            </h5>
+                        </a>
+                        <div class="collapse" id="collapseMDC">
+                            <p class="card-text textoCuerpo"><br>Animación ideal para recepciones: el objetivo es asegurar que los invitados reciban algo especial y sorprendente desde el inicio de la fiesta. Con la magia de cerca nos acercamos a distintos grupos para realizar increíbles trucos. Todos son muy divertidos, impactantes e interactivos.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card shadow">
-                    <img src="media/ShowZoom26_card.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title textoTitulo">Virtual</h5>
-                    <p class="card-text textoCuerpo">Texto sencillo que vende el show virtual.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+                    <img src="media/portada_show_zoom.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">                        
+                        <a class="textoTitulo" data-toggle="collapse" href="#collapseSV" role="button" aria-expanded="false" aria-controls="collapseSV">
+                            <h5 class="botonAcordeon">
+                                Show Virtual<i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            </h5> 
+                        </a>
+                        <div class="collapse" id="collapseSV">
+                            <p class="card-text textoCuerpo"><br>Espectáculo impactante e interactivo
+                                El show cumple todas las características de su show presencial (humor, magia imposible, inolvidable efectos de mentalismo, participación).
+                                La distancia hace el show mas fantástico, ya que es evidente que el artista es incapaz de tener ningún control sobre las acciones y decisiones de los espectadores, sin embargo Dimitri logra crear INCREIBLE magia con sus cartas, sus objetos personales (billetera, celular, adornos, etc) e incluso hace un juego interactivo que involucra a todo el público.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="col-12 col-lg-3 card">
@@ -202,10 +218,10 @@
     <section class="row biografia">
         <div class="card shadow">
             <div class="row">
-                <div class="col-md-7 card-img-top foto">
-                    <img src="media/biografia_web.jpg" alt="Imagen del artista" class="foto" style="padding: 15px;">
+                <div class="col-md-5 card-img-top foto">
+                    <img src="media/fotobio.png" alt="Imagen del artista" class="foto" style="padding: 15px;">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-7">
                     <div class="card-body">
                         <h4 class="textoTitulo">Sobre el artista:</h4>
                         <h6 class="textoCuerpo">Dimitri nació en Ucrania, creció en Israel, vive en Argentina desde 2012. Es mago y mentalista. 
@@ -275,7 +291,7 @@
                 <h2 class="gradienteLogo">Contacto</h2>
             </div>
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="card-body">
                         <h4 class="textoTitulo">Complete el formulario para contactarse conmigo:</h4>
                         <br>
@@ -302,8 +318,8 @@
                           </form>
                     </div>
                 </div>
-                <div class="col-md-5 card-img-top foto">
-                    <img src="media/kiev.jpg" alt="Imagen del artista" class="foto" style="padding: 15px;">
+                <div class="col-md-6 card-img-top foto">
+                    <img src="media/fotocontacto.png" alt="Imagen del artista" class="foto" style="padding: 15px;">
                 </div>            
             </div>
         </div>

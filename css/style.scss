@@ -84,8 +84,8 @@ html {
 }
 
 .shadow {
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1) !important;
   }
 
 //Boton Whatsapp
@@ -119,7 +119,7 @@ nav{
     z-index: 9;
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
-    background-color: rgba($color: #0A0A0A, $alpha: 0.85);
+    background-color: rgba($color: #0A0A0A, $alpha: 0.75);
     //-webkit-transition: background-color 500ms linear; 
     //-moz-transition: background-color 500ms linear; 
     //-ms-transition: background-color 500ms linear; 
@@ -172,7 +172,7 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgba($color: #E7E6E6, $alpha: 0.75);
+    color: rgba($color: #E7E6E6, $alpha: 0.55);
     p{
         font-family: 'Kanit', sans-serif;
         font-weight: 900;
@@ -185,7 +185,7 @@ nav{
     //position: fixed;
     //bottom: 2vh;
     position: relative;
-    padding: 10px;
+    padding: 17px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -222,7 +222,7 @@ nav{
             row-gap: 15px;
             .card {
                 background-color: #0A0A0A;
-                max-width: 300px;
+                max-width: 350px;
                 p{
                     font-size: medium;
                 }
@@ -235,11 +235,19 @@ nav{
             }
         }
     }
+    .botonAcordeon{
+        display: flex;
+        justify-content: space-between;
+    }
+    a:link { text-decoration: none; color: #FBC403; }
+    a:visited { text-decoration: none; color: #FBC403; }
+    a:hover { text-decoration: none; color: #ffea9e; }
+    a:active { text-decoration: none; color: #FBC403; }
 }
 
 //Sección Videos
 .videos {
-    background-image: url('../media/pattern-contacto.png');
+    background-image: url('../media/hex.png');
     padding: 1vw;
     margin: auto;
     .row{
@@ -248,6 +256,7 @@ nav{
     }
     .card{
         background-color: #0A0A0A;
+        background-image: url("../media/abstract-background-300.png");
         margin: auto;
         max-width: 600px;
         justify-content: space-around;
@@ -264,29 +273,31 @@ nav{
                 width: 100%;
                 height: 100%;
             }
-        }
-        
-    }
-    
+        }        
+    }    
 }
 
 //sección Biografía
 .biografia {
     padding: 1vw;
-    background-color: #0A0A0A;
+    background-color: #1d1e22;
+    background-image: url("../media/crossline.png");
     margin: auto;
     .card{
         width: 100%;
-        background-image: url("../media/abstract-background-300.png");
+        background-color: #1d1e22;
+        background-image: url("../media/crossline.png");
+    }
+    img{
+        transform: rotate(-2deg);
     }
 }
 
 //sección Galería
 .galeria {
     background-color: #1d1e22;
-    background-image: url('../media/pattern-shows.png');
+    background-image: url('../media/webb_dark.png');
     padding: 10px;
-
     margin: auto;
 }
 .flipster--coverflow .flipster__item {
@@ -294,14 +305,16 @@ nav{
     margin: auto;
 }
 
-
 //sección Contacto
 .contacto{
-    margin: 1vw;
+    background-color: #1d1e22;
+    background-image: url('../media/whirlpool.png');
+    padding: 1vw;
+    margin: auto;
     .card{
         width: 100%;
         background-color: #1d1e22;
-        background-image: url('../media/pattern-contacto.png');
+        background-image: url('../media/whirlpool.png');
         padding-top: 15px;
         padding-bottom: 15px;
         p{
@@ -313,7 +326,11 @@ nav{
             font-family: 'Merienda One', cursive;
             color: #0A0A0A;
         }            
-    }    
+    } 
+    img{
+        vertical-align: top;
+        transform: rotate(2deg);
+    }   
 }
 
 //Overrides Mobile  
@@ -329,5 +346,5 @@ nav{
             }
         }
     }
-  }
+}
   

@@ -84,8 +84,8 @@ html {
 }
 
 .shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: 0 0.5rem 1rem black !important;
+  box-shadow: 0 0.5rem 1rem black !important;
 }
 
 .float {
@@ -122,7 +122,7 @@ nav {
   z-index: 9;
   font-family: 'Spartan', sans-serif;
   font-weight: 400;
-  background-color: rgba(10, 10, 10, 0.85);
+  background-color: rgba(10, 10, 10, 0.75);
 }
 
 nav ul {
@@ -218,7 +218,7 @@ nav .dropdown-item:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: rgba(231, 230, 230, 0.75);
+  color: rgba(231, 230, 230, 0.55);
 }
 
 .tituloPortada p {
@@ -229,7 +229,7 @@ nav .dropdown-item:hover {
 
 #opiniones {
   position: relative;
-  padding: 10px;
+  padding: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +285,7 @@ nav .dropdown-item:hover {
 
 .shows .card .row .card {
   background-color: #0A0A0A;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .shows .card .row .card p {
@@ -299,8 +299,37 @@ nav .dropdown-item:hover {
   color: #0A0A0A;
 }
 
+.shows .botonAcordeon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shows a:link {
+  text-decoration: none;
+  color: #FBC403;
+}
+
+.shows a:visited {
+  text-decoration: none;
+  color: #FBC403;
+}
+
+.shows a:hover {
+  text-decoration: none;
+  color: #ffea9e;
+}
+
+.shows a:active {
+  text-decoration: none;
+  color: #FBC403;
+}
+
 .videos {
-  background-image: url("../media/pattern-contacto.png");
+  background-image: url("../media/hex.png");
   padding: 1vw;
   margin: auto;
 }
@@ -313,6 +342,7 @@ nav .dropdown-item:hover {
 
 .videos .card {
   background-color: #0A0A0A;
+  background-image: url("../media/abstract-background-300.png");
   margin: auto;
   max-width: 600px;
   -ms-flex-pack: distribute;
@@ -337,18 +367,25 @@ nav .dropdown-item:hover {
 
 .biografia {
   padding: 1vw;
-  background-color: #0A0A0A;
+  background-color: #1d1e22;
+  background-image: url("../media/crossline.png");
   margin: auto;
 }
 
 .biografia .card {
   width: 100%;
-  background-image: url("../media/abstract-background-300.png");
+  background-color: #1d1e22;
+  background-image: url("../media/crossline.png");
+}
+
+.biografia img {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 .galeria {
   background-color: #1d1e22;
-  background-image: url("../media/pattern-shows.png");
+  background-image: url("../media/webb_dark.png");
   padding: 10px;
   margin: auto;
 }
@@ -359,13 +396,16 @@ nav .dropdown-item:hover {
 }
 
 .contacto {
-  margin: 1vw;
+  background-color: #1d1e22;
+  background-image: url("../media/whirlpool.png");
+  padding: 1vw;
+  margin: auto;
 }
 
 .contacto .card {
   width: 100%;
   background-color: #1d1e22;
-  background-image: url("../media/pattern-contacto.png");
+  background-image: url("../media/whirlpool.png");
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -379,6 +419,12 @@ nav .dropdown-item:hover {
   border: #0A0A0A;
   font-family: 'Merienda One', cursive;
   color: #0A0A0A;
+}
+
+.contacto img {
+  vertical-align: top;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 @media (max-width: 360px) {
