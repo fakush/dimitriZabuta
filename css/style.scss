@@ -76,6 +76,27 @@ html {
     color: #FBC403;
 }
 
+.card {
+    border: 0px;
+    padding: 1vw;
+    background-color: #1d1e22;
+    color: #E7E6E6;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+  }
+
+//Boton Whatsapp
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	z-index:100;}
+.my-float{
+	margin-top:16px;}
+
 //Portada de la Página
 video{
     position: fixed;
@@ -93,6 +114,8 @@ nav{
     position: sticky;
     top: 0px;
     margin: 0;
+    padding: 5px !important;
+    padding-left: 15px !important;
     z-index: 9;
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
@@ -135,14 +158,21 @@ nav{
 }
 
 .tituloPortada {
-    position: relative;
-    top: 120px;
+    position: fixed;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 0;
+    left: 0;
     display: flex;
     vertical-align: middle;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgba($color: #0A0A0A, $alpha: 0.85);
+    color: rgba($color: #E7E6E6, $alpha: 0.75);
     p{
         font-family: 'Kanit', sans-serif;
         font-weight: 900;
@@ -150,16 +180,21 @@ nav{
     }
 }
 
+//sección opiniones
 #opiniones{
-    position: fixed;
-    bottom: 2vh;
+    //position: fixed;
+    //bottom: 2vh;
+    position: relative;
+    padding: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
+    background-image: url("../media/abstract-background-300.png");
 }
+
 #myCarousel{
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     max-width: 90vw;
     .active{
@@ -172,40 +207,41 @@ nav{
     }
 }
 
-.float{
-	position:fixed;
-	bottom:40px;
-	right:40px;
-	z-index:100;}
-.my-float{
-	margin-top:16px;}
-
-/*NAV*/
-
-
-.biografia {
-    margin: 1vw;
+//Sección Shows
+.shows{
+    width: 100%;
+    margin: auto;
     .card{
-        background-image: url("../media/abstract-background-300.png");
+        width: 100%;
+        background-color: #1d1e22;
+        background-image: url('../media/pattern-shows.png');
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .row {
+            justify-content: space-around;
+            row-gap: 15px;
+            .card {
+                background-color: #0A0A0A;
+                max-width: 300px;
+                p{
+                    font-size: medium;
+                }
+                .btn-primary{
+                    background: -webkit-linear-gradient(#ffe201, #fec30d);
+                    border: #0A0A0A;
+                    font-family:'Merienda One', cursive;
+                    color: #0A0A0A;
+                }            
+            }
+        }
     }
 }
 
-.card {
-    border: 0px;
-    padding: 1vw;
-    background-color: #1d1e22;
-    color: #E7E6E6;
-}
-
-.shadow {
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
-  }
-
-
-
+//Sección Videos
 .videos {
-    margin: 1vw;
+    background-image: url('../media/pattern-contacto.png');
+    padding: 1vw;
+    margin: auto;
     .row{
         column-gap: 15px;
         row-gap: 15px;
@@ -234,47 +270,32 @@ nav{
     
 }
 
-
-
-.link{
-    position: static;
-    top: -180px;
-}
-
-.shows{
-    
+//sección Biografía
+.biografia {
+    padding: 1vw;
+    background-color: #0A0A0A;
+    margin: auto;
     .card{
         width: 100%;
-        background-color: #1d1e22;
-        background-image: url('../media/pattern-shows.png');
-        padding-top: 15px;
-        padding-bottom: 15px;
-        .row {
-            justify-content: space-around;
-            row-gap: 15px;
-            .card {
-                background-color: #0A0A0A;
-                max-width: 300px;
-                p{
-                    font-size: medium;
-                }
-                .btn-primary{
-                    background: -webkit-linear-gradient(#ffe201, #fec30d);
-                    border: #0A0A0A;
-                    font-family:'Merienda One', cursive;
-                    color: #0A0A0A;
-                }            
-            }
-        }
+        background-image: url("../media/abstract-background-300.png");
     }
-    
-
 }
 
+//sección Galería
 .galeria {
-    margin: 1vw;
+    background-color: #1d1e22;
+    background-image: url('../media/pattern-shows.png');
+    padding: 10px;
+
+    margin: auto;
+}
+.flipster--coverflow .flipster__item {
+    max-width: 85%;
+    margin: auto;
 }
 
+
+//sección Contacto
 .contacto{
     margin: 1vw;
     .card{
@@ -295,25 +316,7 @@ nav{
     }    
 }
 
-
-.code {
-    display: block;
-    background: #eee;
-    padding: 1em;
-    border-radius: 1em;
-    margin: 2em auto;
-    max-width: 30em;
-    font-size: 0.8em;
-    width: fit-content;
-    white-space: pre-wrap;
-  }
-
-  .flipster--coverflow .flipster__item {
-      max-width: 85%;
-      margin: auto;
-  }
-
-  
+//Overrides Mobile  
 @media (max-width: 360px) {
     #opiniones{
         bottom: 15vh;
