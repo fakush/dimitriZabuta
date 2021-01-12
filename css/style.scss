@@ -2,7 +2,7 @@
 
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster&family=Merienda+One&family=Merienda:wght@400;700&family=Molle:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster&family=Merienda+One&family=Merienda:wght@400;700&family=Kanit:wght@900&family=Molle:ital@1&display=swap');
 /* Fuentes Importadas Google Fonts
     font-family: 'Jura', sans-serif;
     font-family: 'Spartan', sans-serif;
@@ -11,6 +11,7 @@
     font-family: 'Merienda', cursive;
     font-family: 'Merienda One', cursive;
     font-family: 'Molle', cursive;
+    font-family: 'Kanit', sans-serif;
 */
 
 /* Paleta de Colores
@@ -29,8 +30,21 @@ body{
     background-color: #151515;
     color: #FBC403;
     width: 100%;}
+
 html {
-    scroll-behavior: smooth;}
+    scroll-behavior: smooth;
+}
+
+.gradienteLogo {
+    font-family: 'Merienda One', cursive;
+    background: -webkit-linear-gradient(#ffe201, #fec30d);
+    -webkit-text-stroke:  .2px #fec30d;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.5;
+}
+    
 .container{
     width: 100%;
     max-width: 100%;
@@ -40,14 +54,7 @@ html {
     top: 100vh;
     background-color: #0A0A0A;
 }
-.gradienteLogo {
-    font-family: 'Merienda One', cursive;
-    background: -webkit-linear-gradient(#ffe201, #fec30d);
-    -webkit-text-stroke:  .2px #fec30d;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.5;}
+
 .foto {
     width: 100%;
     border-radius: 5px;
@@ -55,7 +62,21 @@ html {
         object-fit:cover;
         overflow: hidden; 
         height: 100% ;
-    }}
+    }
+}
+
+.textoTitulo {
+    font-family: 'Merienda One', cursive;
+    color: #FBC403;
+}
+
+.textoCuerpo {
+    font-family: 'Jura', sans-serif;
+    line-height: 1.3;
+    color: #FBC403;
+}
+
+//Portada de la Página
 video{
     position: fixed;
     object-fit: cover;
@@ -67,15 +88,7 @@ video{
     top: 0;
     left: 0;
 }
-.float{
-	position:fixed;
-	bottom:40px;
-	right:40px;
-	z-index:100;}
-.my-float{
-	margin-top:16px;}
 
-/*NAV*/
 nav{
     position: sticky;
     top: 0px;
@@ -113,7 +126,6 @@ nav{
     }
     .dropdown-item:hover { text-decoration: none; color: #003653; background-color: #1d1e22;}
 }
-
 .navbar-dark .navbar-nav{
     .nav-link:link { text-decoration: none; color: #FBC403; } 
     .nav-link:visited { text-decoration: none; color: #FBC403; }
@@ -121,6 +133,55 @@ nav{
     .nav-link:active { text-decoration: none; color: #FBC403; }
     text-align: end;
 }
+
+.tituloPortada {
+    position: relative;
+    top: 120px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba($color: #0A0A0A, $alpha: 0.85);
+    p{
+        font-family: 'Kanit', sans-serif;
+        font-weight: 900;
+        font-size: 8em;
+    }
+}
+
+#opiniones{
+    position: fixed;
+    bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#myCarousel{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    max-width: 90vw;
+    .active{
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-item{
+        width: 100%;
+        transition: transform 2s ease, opacity 2s ease-out;
+    }
+}
+
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	z-index:100;}
+.my-float{
+	margin-top:16px;}
+
+/*NAV*/
+
 
 .biografia {
     margin: 1vw;
@@ -141,16 +202,7 @@ nav{
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
   }
 
-.textoTitulo {
-    font-family: 'Merienda One', cursive;
-    color: #FBC403;
-}
 
-.textoCuerpo {
-    font-family: 'Jura', sans-serif;
-    line-height: 1.3;
-    color: #FBC403;
-}
 
 .videos {
     margin: 1vw;
@@ -182,6 +234,8 @@ nav{
     
 }
 
+
+
 .link{
     position: static;
     top: -180px;
@@ -207,7 +261,7 @@ nav{
                 .btn-primary{
                     background: -webkit-linear-gradient(#ffe201, #fec30d);
                     border: #0A0A0A;
-                    font-family: 'Oleo Script', cursive;
+                    font-family:'Merienda One', cursive;
                     color: #0A0A0A;
                 }            
             }
@@ -235,7 +289,7 @@ nav{
         .btn-primary{
             background: -webkit-linear-gradient(#ffe201, #fec30d);
             border: #0A0A0A;
-            font-family: 'Oleo Script', cursive;
+            font-family: 'Merienda One', cursive;
             color: #0A0A0A;
         }            
     }    
@@ -259,3 +313,18 @@ nav{
       margin: auto;
   }
 
+  
+@media (max-width: 360px) {
+    #opiniones{
+        bottom: 15vh;
+        width: 100vw;
+        .carousel{
+            display: flex;
+            justify-content: space-around;
+            .carousel-inner .carousel-item img{
+                width: 100%;
+            }
+        }
+    }
+  }
+  
