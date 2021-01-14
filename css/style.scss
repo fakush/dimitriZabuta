@@ -180,6 +180,19 @@ nav{
     }
 }
 
+//sección Frase Intro
+.fraseIntro{
+    padding: 15px;
+    text-align: center;
+    background-image: url("../media/abstract-background-300.png");
+    h2{
+        font-size: calc(1.3em + 1.3vw);
+        font-family: 'Jura', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
 //sección opiniones
 #opiniones{
     //position: fixed;
@@ -197,8 +210,13 @@ nav{
     margin-left: 0;
     margin-right: 0;
     h5{
-        line-height: 2;
+        padding-top: 8px;
+        font-size: calc(1em + 1vw);
     }
+    a:link { text-decoration: none; color: #FBC403; }
+    a:visited { text-decoration: none; color: #FBC403; }
+    a:hover { text-decoration: none; color: #ffea9e; }
+    a:active { text-decoration: none; color: #FBC403; }
 }
 
 #myCarousel{
@@ -256,7 +274,8 @@ nav{
 
 //Sección Videos
 .videos {
-    background-image: url('../media/hex.png');
+    background-color: #1d1e22;
+    background-image: url("../media/crossline.png");
     padding: 1vw;
     margin: auto;
     .row{
@@ -264,7 +283,7 @@ nav{
         row-gap: 15px;
     }
     .card{
-        background-color: #0A0A0A;
+        background-color: #1d1e22;
         background-image: url("../media/abstract-background-300.png");
         margin: auto;
         max-width: 600px;
@@ -283,6 +302,11 @@ nav{
                 height: 100%;
             }
         }        
+    }
+    h6{
+        font-family: 'Jura', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
     }    
 }
 
@@ -290,12 +314,12 @@ nav{
 .biografia {
     padding: 1vw;
     background-color: #1d1e22;
-    background-image: url("../media/crossline.png");
+    background-image: url('../media/hex.png');
     margin: auto;
     .card{
         width: 100%;
         background-color: #1d1e22;
-        background-image: url("../media/crossline.png");
+        background-image: url('../media/hex.png');
     }
     .col-md-8{
         display: flex;
