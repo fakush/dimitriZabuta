@@ -228,16 +228,28 @@ nav .dropdown-item:hover {
 }
 
 #opiniones {
+  font-family: 'Spartan', sans-serif;
+  text-transform: uppercase;
   position: relative;
   padding: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
   background-image: url("../media/abstract-background-300.png");
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#opiniones h5 {
+  line-height: 2;
 }
 
 #myCarousel {
@@ -378,6 +390,15 @@ nav .dropdown-item:hover {
   background-image: url("../media/crossline.png");
 }
 
+.biografia .col-md-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .biografia img {
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
@@ -427,9 +448,12 @@ nav .dropdown-item:hover {
           transform: rotate(2deg);
 }
 
-@media (max-width: 360px) {
+.contacto h5 {
+  padding: 15px;
+}
+
+@media (max-width: 720px) {
   #opiniones {
-    bottom: 15vh;
     width: 100vw;
   }
   #opiniones .carousel {

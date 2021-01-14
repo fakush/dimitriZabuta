@@ -184,12 +184,21 @@ nav{
 #opiniones{
     //position: fixed;
     //bottom: 2vh;
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
     position: relative;
     padding: 17px;
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     background-image: url("../media/abstract-background-300.png");
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    h5{
+        line-height: 2;
+    }
 }
 
 #myCarousel{
@@ -288,6 +297,10 @@ nav{
         background-color: #1d1e22;
         background-image: url("../media/crossline.png");
     }
+    .col-md-8{
+        display: flex;
+        align-items: center;
+    }
     img{
         transform: rotate(-2deg);
     }
@@ -330,13 +343,15 @@ nav{
     img{
         vertical-align: top;
         transform: rotate(2deg);
+    }
+    h5{
+        padding: 15px;
     }   
 }
 
 //Overrides Mobile  
-@media (max-width: 360px) {
-    #opiniones{
-        bottom: 15vh;
+@media (max-width: 720px) {
+    #opiniones {
         width: 100vw;
         .carousel{
             display: flex;
