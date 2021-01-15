@@ -336,6 +336,48 @@ nav{
     background-image: url('../media/webb_dark.png');
     padding: 10px;
     margin: auto;
+    .carouselGaleria {
+        .carousel-inner img {
+            max-width: 100vw;
+            height: 100%;
+        }
+
+        .carousel-caption {
+            padding-bottom: 0px;
+            h5{
+                padding: 10px;
+                background-color: rgba($color: #0A0A0A, $alpha: 0.75);
+                border-radius: 5px;
+                font-size: calc(1em + 1vw);
+                text-transform: capitalize;
+                font-family: 'Jura', sans-serif;
+            }
+            
+        }
+        
+        #custCarousel .carousel-indicators {
+            position: static;
+            margin-top: 20px
+        }
+        
+        #custCarousel .carousel-indicators>li {
+            width: 100px
+        }
+        
+        #custCarousel .carousel-indicators li img {
+            display: block;
+            opacity: 0.5
+        }
+        
+        #custCarousel .carousel-indicators li.active img {
+            opacity: 1
+        }
+        
+        #custCarousel .carousel-indicators li:hover img {
+            opacity: 0.75
+        }
+
+    }
 }
 .flipster--coverflow .flipster__item {
     max-width: 85%;
