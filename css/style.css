@@ -462,12 +462,15 @@ nav .dropdown-item:hover {
 }
 
 .galeria .carouselGaleria .carousel-caption h5 {
-  padding: 10px;
-  background-color: rgba(10, 10, 10, 0.75);
-  border-radius: 5px;
   font-size: calc(1em + 1vw);
   text-transform: capitalize;
   font-family: 'Jura', sans-serif;
+}
+
+.galeria .carouselGaleria .carousel-caption h5 span {
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 0.75);
+  border-radius: 5px;
 }
 
 .galeria .carouselGaleria #custCarousel .carousel-indicators {
