@@ -6,7 +6,7 @@
     <title>Dimitri</title>
     <meta name="description" content="Mago Dimitri Zabuta - Campeón internacional de mágia. Su show combina diversión y asombro,">
     <meta name="keywords"  content="fiestas, eventos, magia, mago, show, show de magia, adultos, animación fiestas adultos, cumpleaños, casamientos, bodas, show virtual, Espectaculo, Mejor, 15 años, showman, animador, artista, entretenimiento">
-    <link rel="icon" href="media/icon2.png">
+    <!-- <link rel="icon" href="media/icon2.png"> -->
 
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -44,10 +44,10 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav col-12 d-flex justify-content-end">
-            <li class="nav-item">
+            <li class="nav-item gradienteLogo">
                 <a class="nav-link" href="#bio">Biografía</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item gradienteLogo">
                 <a class="nav-link" href="#videos">Videos</a>
             </li>
             <!-- <li class="nav-item dropdown">
@@ -60,10 +60,10 @@
                     <a class="dropdown-item" href="#virtual">Show Virtual</a>
                 </div>
             </li> -->
-            <li class="nav-item">
+            <li class="nav-item gradienteLogo">
                 <a class="nav-link" href="#shows">Shows</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item gradienteLogo">
                 <a class="nav-link" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
@@ -78,8 +78,11 @@
 <!-- Cuerpo Página -->
 <div class="container">
     <section class="fraseIntro">
-        <h2>Dimitri nació en Ucrania, creció en Israel, vive en Argentina desde 2012.
+        <img src="media/separador_1.png" class="separador" alt="">
+        <h2 class="textoTitulo">Dimitri nació en Ucrania, creció en Israel, vive en Argentina desde 2012.
             Su show es una combinación fascinante de magia y humor.</h2>
+            <!-- <h2>Experiencia única y inolvidable, un show extraordinario y mysterioso</h2> -->
+        <img src="media/separador_1.png" class="separador" style="transform: rotate(180deg);" alt="">
     </section>
     <section id="shows" class="row shows">
         <div class="card shadow">
@@ -87,42 +90,51 @@
                 <h2 class="gradienteLogo">Shows</h2>
             </div> -->
             <div class="row">
-                <div class="col-12 col-lg-4 card shadow" >
-                    <img src="media/portada_show_central.JPG" class="card-img-top" alt="...">
-                    <div class="card-body">                        
-                        <a class="textoTitulo" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <h5 class="botonAcordeon">Show Central<i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </h5>
-                        </a>
-                        <div class="collapse" id="collapseExample">
-                            <p class="card-text textoCuerpo"><br>Show de Salón o Escenario. El show combina fascinante magia y humor. Una propuesta original, ideal para aquellos que buscan algo distinto. Es un show participativo que genera reacciones increíbles.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <iframe class="card-img-top" src="https://player.vimeo.com/video/499436586?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <!-- <img src="media/portada_show_central.JPG" class="card-img-top" alt="..."> -->
+                        <div class="card-body">                        
+                            <a class="textoTitulo" data-toggle="collapse" href="#collapseCentral" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <h5 class="botonAcordeon">Show Central<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </h5>
+                            </a>
+                            <div class="collapse" id="collapseCentral">
+                                <p class="card-text textoCuerpo"><br>Show de Salón o Escenario. El show combina fascinante magia y humor. Una propuesta original, ideal para aquellos que buscan algo distinto. Es un show participativo que genera reacciones increíbles.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 card shadow">
-                    <img src="media/portada_closeup.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">                        
-                        <a class="textoTitulo" data-toggle="collapse" href="#collapseMDC" role="button" aria-expanded="false" aria-controls="collapseMDC">
-                            <h5 class="botonAcordeon">Magia de Cerca<i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </h5>
-                        </a>
-                        <div class="collapse" id="collapseMDC">
-                            <p class="card-text textoCuerpo"><br>Animación ideal para recepciones: el objetivo es asegurar que los invitados reciban algo especial y sorprendente desde el inicio de la fiesta. Con la magia de cerca nos acercamos a distintos grupos para realizar increíbles trucos. Todos son muy divertidos, impactantes e interactivos.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <iframe class="card-img-top" src="https://player.vimeo.com/video/499435984?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <!-- <img src="media/portada_closeup.jpg" class="card-img-top" alt="..."> -->
+                        <div class="card-body">                        
+                            <a class="textoTitulo" data-toggle="collapse" href="#collapseMDC" role="button" aria-expanded="false" aria-controls="collapseMDC">
+                                <h5 class="botonAcordeon">Magia de Cerca<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </h5>
+                            </a>
+                            <div class="collapse" id="collapseMDC">
+                                <p class="card-text textoCuerpo"><br>Animación ideal para recepciones: el objetivo es asegurar que los invitados reciban algo especial y sorprendente desde el inicio de la fiesta. Con la magia de cerca nos acercamos a distintos grupos para realizar increíbles trucos. Todos son muy divertidos, impactantes e interactivos.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 card shadow">
-                    <img src="media/portada_show_zoom.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">                        
-                        <a class="textoTitulo" data-toggle="collapse" href="#collapseSV" role="button" aria-expanded="false" aria-controls="collapseSV">
-                            <h5 class="botonAcordeon">
-                                Show Virtual<i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </h5> 
-                        </a>
-                        <div class="collapse" id="collapseSV">
-                            <p class="card-text textoCuerpo"><br>Espectáculo impactante e interactivo
-                                El show cumple todas las características de su show presencial (humor, magia imposible, inolvidable efectos de mentalismo, participación).
-                                La distancia hace el show mas fantástico, ya que es evidente que el artista es incapaz de tener ningún control sobre las acciones y decisiones de los espectadores, sin embargo Dimitri logra crear INCREIBLE magia con sus cartas, sus objetos personales (billetera, celular, adornos, etc) e incluso hace un juego interactivo que involucra a todo el público.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow">
+                        <iframe class="card-img-top" src="https://player.vimeo.com/video/499436216?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <!-- <img src="media/portada_show_zoom.jpeg" class="card-img-top" alt="..."> -->
+                        <div class="card-body">                        
+                            <a class="textoTitulo" data-toggle="collapse" href="#collapseSV" role="button" aria-expanded="false" aria-controls="collapseSV">
+                                <h5 class="botonAcordeon">
+                                    Show Virtual<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </h5> 
+                            </a>
+                            <div class="collapse" id="collapseSV">
+                                <p class="card-text textoCuerpo"><br>Espectáculo impactante e interactivo
+                                    El show cumple todas las características de su show presencial (humor, magia imposible, inolvidable efectos de mentalismo, participación).
+                                    La distancia hace el show mas fantástico, ya que es evidente que el artista es incapaz de tener ningún control sobre las acciones y decisiones de los espectadores, sin embargo Dimitri logra crear INCREIBLE magia con sus cartas, sus objetos personales (billetera, celular, adornos, etc) e incluso hace un juego interactivo que involucra a todo el público.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,10 +152,13 @@
         <div class="card shadow">
             <div class="row">
                 <div class="col-md-4 card-img-top foto">
-                    <img src="media/fotobio.png" alt="Imagen del artista" class="foto" style="padding: 15px;">
+                    <img src="media/fotobio.png" alt="Imagen del artista" class="foto inclinar">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
+                        <div class="separadorWrapper">
+                            <img src="media/separador_1.png" class="separador" alt="">
+                        </div>
                         <h4 class="textoTitulo">Sobre el artista:</h4>
                         <h6 class="textoCuerpo">Dimitri nació en Ucrania, creció en Israel, vive en Argentina desde 2012.
                             <br><br>
@@ -153,6 +168,9 @@
                             <br><br>
                             Ganó el segundo puesto en el Campeonato Latinoamericano de la Magia. Y obtuvo 6to puesto en el Campeonato Mundial de Magia que se realizó en Corea del Sur. 
                             </h6>
+                        <div class="separadorWrapper">
+                            <img src="media/separador_1.png" class="separador" style="transform: rotate(180deg);" alt="">
+                        </div>
                     </div>            
                 </div>
             </div>
@@ -162,7 +180,7 @@
         <!-- <div class="col-12">
             <h2 class="gradienteLogo">Videos</h2>
         </div> -->
-        <div class="col-md-12 col-lg-6">
+        <!-- <div class="col-md-12 col-lg-6">
             <div class="card shadow">
                 <h6 class="textoTitulo">Magia de Cerca </h6>
                 <div class="iframeContainer">
@@ -193,10 +211,13 @@
                     <iframe src="https://player.vimeo.com/video/499436216?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
             </div>
+        </div> -->
+        <div class="col-md-12 col-lg-6 iframeContainer">
+            <iframe src="https://player.vimeo.com/video/499431689?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
     </section>
     <section id="opiniones" class="row">
-        <a href="https://g.co/kgs/VJohRx" target="_blank">
+        <!-- <a href="https://g.co/kgs/VJohRx" target="_blank"> -->
         <img src="media/5star.png" alt="" style="width: 150px; height: 30px; margin-right: 10px;">
         <img src="media/logo-google.png" alt="" style="width: 30px; height: 30px;">
         <br>
@@ -249,7 +270,7 @@
                 </div>
                 <br>
             </div>
-        </a>
+        <!-- </a> -->
     </section>
     <section id="galeria" class="row galeria">
         <!-- <div class="col-12">
