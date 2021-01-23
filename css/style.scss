@@ -104,7 +104,8 @@ html {
 //Separador
 .separador{
     padding: 20px;
-    width: 22vw;
+    width: 350px;
+    max-width: 75vw;
 }
 .separadorWrapper{
     display: flex; 
@@ -197,6 +198,8 @@ nav{
 //sección Frase Intro
 .fraseIntro{
     padding: 15px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     text-align: center;
     background-image: url("../media/abstract-background-300.png");
     h2{
