@@ -10,7 +10,6 @@
     font-family: 'Lobster', cursive;
     font-family: 'Merienda', cursive;
     font-family: 'Merienda One', cursive;
-    font-family: 'Molle', cursive;
     font-family: 'Kanit', sans-serif;
     font-family: 'Arima Madurai', cursive;
     font-family: 'EB Garamond', serif;
@@ -243,21 +242,22 @@ nav .dropdown-item:hover {
 }
 
 .fraseIntro {
-  padding: 15px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding: 1px;
+  padding-left: 8vw;
+  padding-right: 8vw;
   text-align: center;
   background-image: url("../media/abstract-background-300.png");
 }
 
 .fraseIntro h2 {
-  font-size: calc(1.3em + 1.3vw);
+  font-size: calc(1.7em + 1.7vw);
+  text-transform: capitalize;
 }
 
 #opiniones {
   text-transform: uppercase;
   position: relative;
-  padding: 17px;
+  padding: px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,7 +330,7 @@ nav .dropdown-item:hover {
 
 .shows .card {
   width: 100%;
-  background-color: #1d1e22;
+  background-color: #2c0719;
   background-image: url("../media/pattern-shows.png");
   padding-top: 15px;
   padding-bottom: 15px;
@@ -340,10 +340,15 @@ nav .dropdown-item:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   row-gap: 15px;
+  padding: 7px;
 }
 
 .shows .card .row .card {
-  background-color: #0d0d0e;
+  background-color: #470526;
+}
+
+.shows .card .row .card .card-body {
+  padding: 10px;
 }
 
 .shows .card .row .card iframe {
@@ -351,7 +356,9 @@ nav .dropdown-item:hover {
 }
 
 .shows .card .row .card p {
-  font-size: medium;
+  color: #E7E6E6;
+  font-size: 18px;
+  font-family: 'Spartan', sans-serif;
 }
 
 .shows .botonAcordeon {
@@ -427,15 +434,15 @@ nav .dropdown-item:hover {
 
 .biografia {
   padding: 1vw;
-  background-color: #1d1e22;
-  background-image: url("../media/hex.png");
+  background-color: #0c122b;
+  background-image: url("../media/1815-2.png");
   margin: auto;
 }
 
 .biografia .card {
   width: 100%;
   background-color: #1d1e22;
-  background-image: url("../media/hex.png");
+  background-image: url("../media/1815-2.png");
 }
 
 .biografia .col-md-8 {
@@ -450,6 +457,13 @@ nav .dropdown-item:hover {
 .biografia .inclinar {
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
+}
+
+.biografia p {
+  color: #E7E6E6;
+  font-family: 'Merienda', cursive;
+  font-weight: 900;
+  font-size: 19px;
 }
 
 .galeria {
