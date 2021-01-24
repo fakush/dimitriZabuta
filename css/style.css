@@ -69,6 +69,8 @@ html {
   font-family: 'EB Garamond', serif;
   text-transform: uppercase;
   color: #fcd95a;
+  font-size: calc(1.6em + 1.6vw);
+  text-transform: capitalize;
 }
 
 .textoCuerpo {
@@ -257,7 +259,7 @@ nav .dropdown-item:hover {
 #opiniones {
   text-transform: uppercase;
   position: relative;
-  padding: px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +278,6 @@ nav .dropdown-item:hover {
 
 #opiniones h5 {
   padding-top: 8px;
-  font-size: calc(1.2em + 1.2vw);
 }
 
 #opiniones a:link {
@@ -361,6 +362,10 @@ nav .dropdown-item:hover {
   font-family: 'Spartan', sans-serif;
 }
 
+.shows .card .row .card h5 {
+  font-size: 25px;
+}
+
 .shows .botonAcordeon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,45 +396,25 @@ nav .dropdown-item:hover {
 }
 
 .videos {
-  background-color: #1d1e22;
-  background-image: url("../media/crossline.png");
-  padding: 1vw;
-  margin: auto;
+  background-color: #030236;
+  background-image: url("../media/136-2.png");
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.videos .row {
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
+.videos h3 {
+  font-size: calc(2em + 2vw);
 }
 
-.videos .card {
-  background-color: #1d1e22;
-  background-image: url("../media/abstract-background-300.png");
-  margin: auto;
-  max-width: 600px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.videos .card .iframeContainer {
-  position: relative;
+.videos iframe {
   width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-
-.videos .card .iframeContainer iframe {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.videos .iframeContainer {
-  width: 100%;
+  max-width: 90vw;
+  max-height: 75vh;
 }
 
 .biografia {
@@ -479,41 +464,26 @@ nav .dropdown-item:hover {
 }
 
 .galeria .carouselGaleria .carousel-caption {
-  padding-bottom: 0px;
+  padding-bottom: 15px;
 }
 
 .galeria .carouselGaleria .carousel-caption h5 {
   font-size: calc(1em + 1vw);
   text-transform: capitalize;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Spartan', sans-serif;
+  color: #fcd95a;
 }
 
 .galeria .carouselGaleria .carousel-caption h5 span {
   padding: 10px;
-  background-color: rgba(10, 10, 10, 0.75);
+  background-color: rgba(32, 22, 2, 0.75);
   border-radius: 5px;
 }
 
-.galeria .carouselGaleria #custCarousel .carousel-indicators {
-  position: static;
-  margin-top: 20px;
-}
-
-.galeria .carouselGaleria #custCarousel .carousel-indicators > li {
-  width: 100px;
-}
-
-.galeria .carouselGaleria #custCarousel .carousel-indicators li img {
-  display: block;
-  opacity: 0.5;
-}
-
-.galeria .carouselGaleria #custCarousel .carousel-indicators li.active img {
-  opacity: 1;
-}
-
-.galeria .carouselGaleria #custCarousel .carousel-indicators li:hover img {
-  opacity: 0.75;
+.galeria .carouselGaleria .carousel-control-next,
+.galeria .carouselGaleria .carousel-control-prev {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .flipster--coverflow .flipster__item {
@@ -570,6 +540,11 @@ nav .dropdown-item:hover {
   }
   #opiniones .carousel .carousel-inner .carousel-item img {
     width: 100%;
+  }
+  .videos iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 90vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -70,13 +70,14 @@ html {
     font-family: 'EB Garamond', serif;
     text-transform: uppercase;
     color: #fcd95a;
+    font-size: calc(1.6em + 1.6vw);
+    text-transform: capitalize;
 }
 
 .textoCuerpo {
     font-family: 'EB Garamond', serif;
     font-weight: 500;
     line-height: 1.3;
-
     color: #fcd95a;
 }
 
@@ -214,7 +215,7 @@ nav{
     //bottom: 2vh;
     text-transform: uppercase;
     position: relative;
-    padding: px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,7 +226,7 @@ nav{
     margin-right: 0;
     h5{
         padding-top: 8px;
-        font-size: calc(1.2em + 1.2vw);
+        // font-size: calc(1.2em + 1.2vw);
     }
     a:link { text-decoration: none; color: #fcd95a; }
     a:visited { text-decoration: none; color: #fcd95a; }
@@ -276,6 +277,10 @@ nav{
                     font-family: 'Spartan', sans-serif;
                     // text-align: justify;
                 }
+                h5{
+                    font-size: 25px;
+                }
+            
             }
         }
     }
@@ -289,39 +294,20 @@ nav{
     a:active { text-decoration: none; color: #fcd95a; }
 }
 
-//Sección Videos
+//Sección Eventos Internacionales
 .videos {
-    background-color: #1d1e22;
-    background-image: url("../media/crossline.png");
-    padding: 1vw;
-    margin: auto;
-    .row{
-        column-gap: 15px;
-        row-gap: 15px;
+    background-color: #030236;
+    background-image: url("../media/136-2.png");
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    h3{
+        font-size: calc(2em + 2vw);
     }
-    .card{
-        background-color: #1d1e22;
-        background-image: url("../media/abstract-background-300.png");
-        margin: auto;
-        max-width: 600px;
-        justify-content: space-around;
-        margin-bottom: 20px;
-        .iframeContainer{
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%;
-            iframe {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }        
-    }
-    .iframeContainer{
+    iframe{
         width: 100%;
+        max-width: 90vw;
+        max-height: 75vh;
     }
 }
 
@@ -363,43 +349,47 @@ nav{
             max-width: 100vw;
             height: 100%;
         }
-
         .carousel-caption {
-            padding-bottom: 0px;
+            padding-bottom: 15px;
             h5{
                 font-size: calc(1em + 1vw);
                 text-transform: capitalize;
-                font-family: 'Jura', sans-serif;
+                font-family: 'Spartan', sans-serif;
+                color: #fcd95a;
                 span{
                     padding: 10px;
-                    background-color: rgba($color: #0A0A0A, $alpha: 0.75);
+                    background-color: rgba($color: #201602, $alpha: 0.75);
                     border-radius: 5px;
                 }
             }
             
         }
-        
-        #custCarousel .carousel-indicators {
-            position: static;
-            margin-top: 20px;
+        .carousel-control-next,
+        .carousel-control-prev /*, .carousel-indicators */ {
+            filter: invert(100%);
         }
+
+        // #custCarousel .carousel-indicators {
+        //     position: static;
+        //     margin-top: 20px;
+        // }
         
-        #custCarousel .carousel-indicators>li {
-            width: 100px;
-        }
+        // #custCarousel .carousel-indicators>li {
+        //     width: 100px;
+        // }
         
-        #custCarousel .carousel-indicators li img {
-            display: block;
-            opacity: 0.5;
-        }
+        // #custCarousel .carousel-indicators li img {
+        //     display: block;
+        //     opacity: 0.5;
+        // }
         
-        #custCarousel .carousel-indicators li.active img {
-            opacity: 1;
-        }
+        // #custCarousel .carousel-indicators li.active img {
+        //     opacity: 1;
+        // }
         
-        #custCarousel .carousel-indicators li:hover img {
-            opacity: 0.75;
-        }
+        // #custCarousel .carousel-indicators li:hover img {
+        //     opacity: 0.75;
+        // }
 
     }
 }
@@ -449,6 +439,13 @@ nav{
             .carousel-inner .carousel-item img{
                 width: 100%;
             }
+        }
+    }
+    .videos {
+        iframe{
+            width: 100%;
+            height: 100%;
+            max-width: 90vw;
         }
     }
 }
