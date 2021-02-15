@@ -491,6 +491,130 @@ nav .dropdown-item:hover {
   margin: auto;
 }
 
+.brands {
+  padding: 1px;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  text-align: center;
+  background-image: url("../media/abstract-background-300.png");
+  /* Slider */
+}
+
+.brands h2 {
+  font-size: calc(1em + 1vw);
+  text-transform: capitalize;
+}
+
+.brands .slick-slide {
+  margin: 5px 0px;
+}
+
+.brands .slick-slide img {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.brands .slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.brands .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.brands .slick-list:focus {
+  outline: none;
+}
+
+.brands .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.brands .slick-slider .slick-track,
+.brands .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.brands .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.brands .slick-track:before,
+.brands .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.brands .slick-track:after {
+  clear: both;
+}
+
+.brands .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.brands .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.brands [dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.brands .slick-slide img {
+  display: block;
+}
+
+.brands .slick-slide.slick-loading img {
+  display: none;
+}
+
+.brands .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.brands .slick-initialized .slick-slide {
+  display: block;
+}
+
+.brands .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.brands .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.brands .slick-arrow.slick-hidden {
+  display: none;
+}
+
 .contacto {
   background-color: #1d1e22;
   background-image: url("../media/whirlpool.png");
