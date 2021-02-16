@@ -308,15 +308,6 @@ nav .dropdown-item:hover {
   max-width: 90vw;
 }
 
-#myCarousel .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #myCarousel .carousel-item {
   width: 100%;
   -webkit-transition: opacity 2s ease-out, -webkit-transform 2s ease;
@@ -334,12 +325,14 @@ nav .dropdown-item:hover {
   font-family: 'Merienda', cursive;
   color: #E7E6E6;
   text-transform: none;
+  font-style: italic;
 }
 
 #myCarousel .firma {
   font-size: calc(1em + 1vw);
   font-family: 'Merienda', cursive;
   text-transform: none;
+  text-align: end;
 }
 
 .shows {
@@ -669,20 +662,27 @@ nav .dropdown-item:hover {
   padding: 15px;
 }
 
+.contacto a:link {
+  text-decoration: none;
+  color: #fcd95a;
+}
+
+.contacto a:visited {
+  text-decoration: none;
+  color: #fcd95a;
+}
+
+.contacto a:hover {
+  text-decoration: none;
+  color: #ffea9e;
+}
+
+.contacto a:active {
+  text-decoration: none;
+  color: #fcd95a;
+}
+
 @media (max-width: 720px) {
-  #opiniones {
-    width: 100vw;
-  }
-  #opiniones .carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #opiniones .carousel .carousel-inner .carousel-item img {
-    width: 100%;
-  }
   .videos iframe {
     width: 100%;
     height: 100%;
