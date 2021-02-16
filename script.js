@@ -1,6 +1,17 @@
+var numOfSlides = 0;
+$(function() {      
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    // console.log(isMobile);
+    if (isMobile) {
+        numOfSlides = 1;    
+    } else {
+        numOfSlides = 4;
+    }
+ });
 $(document).ready(function(){
+    // console.log(numOfSlides);
     $('.customer-logos').slick({
-        slidesToShow: 4,
+        slidesToShow: numOfSlides,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -10,12 +21,12 @@ $(document).ready(function(){
             responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 1
             }
         }]
     });
