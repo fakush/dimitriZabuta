@@ -278,6 +278,7 @@ nav .dropdown-item:hover {
 
 #opiniones h5 {
   padding-top: 8px;
+  font-size: calc(1em + 1vw);
 }
 
 #opiniones a:link {
@@ -302,7 +303,7 @@ nav .dropdown-item:hover {
 
 #myCarousel {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(17, 17, 17, 0.6);
   border-radius: 5px;
   max-width: 90vw;
 }
@@ -322,6 +323,23 @@ nav .dropdown-item:hover {
   transition: opacity 2s ease-out, -webkit-transform 2s ease;
   transition: transform 2s ease, opacity 2s ease-out;
   transition: transform 2s ease, opacity 2s ease-out, -webkit-transform 2s ease;
+}
+
+#myCarousel .carousel-indicators li {
+  border-bottom: 0px;
+}
+
+#myCarousel .opinion {
+  font-size: calc(1em + 1vw);
+  font-family: 'Merienda', cursive;
+  color: #E7E6E6;
+  text-transform: none;
+}
+
+#myCarousel .firma {
+  font-size: calc(1em + 1vw);
+  font-family: 'Merienda', cursive;
+  text-transform: none;
 }
 
 .shows {

@@ -226,7 +226,7 @@ nav{
     margin-right: 0;
     h5{
         padding-top: 8px;
-        // font-size: calc(1.2em + 1.2vw);
+        font-size: calc(1em + 1vw);
     }
     a:link { text-decoration: none; color: #fcd95a; }
     a:visited { text-decoration: none; color: #fcd95a; }
@@ -236,7 +236,7 @@ nav{
 
 #myCarousel{
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(17, 17, 17, 0.6);
     border-radius: 5px;
     max-width: 90vw;
     .active{
@@ -246,6 +246,20 @@ nav{
     .carousel-item{
         width: 100%;
         transition: transform 2s ease, opacity 2s ease-out;
+    }
+    .carousel-indicators li{
+        border-bottom: 0px;
+    }
+    .opinion{
+        font-size: calc(1em + 1vw);
+        font-family: 'Merienda', cursive;
+        color: #E7E6E6;
+        text-transform: none;
+    }
+    .firma{
+        font-size: calc(1em + 1vw);
+        font-family: 'Merienda', cursive;
+        text-transform: none;
     }
 }
 
@@ -393,6 +407,7 @@ nav{
 
     }
 }
+
 .flipster--coverflow .flipster__item {
     max-width: 85%;
     margin: auto;
