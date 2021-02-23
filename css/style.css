@@ -191,6 +191,7 @@ nav .dropdown-item:hover {
 
 .navbar-dark .navbar-nav {
   text-align: end;
+  list-style: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:link {
@@ -598,6 +599,8 @@ nav .dropdown-item:hover {
 
 .brands .slick-slide img {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .brands .slick-slide.slick-loading img {

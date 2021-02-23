@@ -11,7 +11,7 @@ $(function() {
 $(document).ready(function(){
     // console.log(numOfSlides);
     $('.customer-logos').slick({
-        slidesToShow: numOfSlides,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -19,15 +19,14 @@ $(document).ready(function(){
         dots: false,
             pauseOnHover: false,
             responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2
-            }
+                breakpoint: 1100,
+            settings: {slidesToShow: 3}
+        },{
+            breakpoint: 769,
+            settings: {slidesToShow: 2}
         }, {
             breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
+            settings: {slidesToShow: 1}
         }]
     });
 });

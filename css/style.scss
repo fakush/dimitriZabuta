@@ -172,6 +172,7 @@ nav{
     .nav-link:hover { text-decoration: none; color: #FFDD03; }
     .nav-link:active { text-decoration: none; color: #FBC403; }
     text-align: end;
+    list-style:none;
 }
 
 .tituloPortada {
@@ -525,6 +526,8 @@ nav{
     .slick-slide img
     {
         display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
     .slick-slide.slick-loading img
     {
