@@ -473,6 +473,7 @@ nav .dropdown-item:hover {
 .galeria .carouselGaleria .carousel-inner img {
   max-width: 100vw;
   height: 100%;
+  height: intrinsic;
 }
 
 .galeria .carouselGaleria .carousel-caption {
