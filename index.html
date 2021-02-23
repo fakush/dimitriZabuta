@@ -7,7 +7,14 @@
     <meta name="description" content="Mago Dimitri Zabuta - Campeón internacional de mágia. Su show combina diversión y asombro,">
     <meta name="keywords"  content="fiestas, eventos, magia, mago, show, show de magia, adultos, animación fiestas adultos, cumpleaños, casamientos, bodas, show virtual, Espectaculo, Mejor, 15 años, showman, animador, artista, entretenimiento">
     <link rel="icon" href="media/ico_web.png">
-
+    <!-- Google Analitycs -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV8R3WCZQB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FV8R3WCZQB');
+    </script>
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,8 +31,8 @@
 <body>
 <!-- Portada -->
 <video src="media/videointro.mp4" autoplay muted loop playsinline></video>
-<nav class="navbar navbar-expand-xl navbar-dark sticky-top"> <!--Nombres de clases default boostrap, no aplica BEM-->
-    <a class="navbar-brand d-flex justify-content-start" href="#"><img src="media/logo_web.png" alt="Logo" style="max-width: 25vw; width: 100px;"></a>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"> <!--Nombres de clases default boostrap, no aplica BEM-->
+    <a class="navbar-brand d-flex justify-content-start" href="#"><img src="media/logo_web.png" alt="Logo" style="max-width: 25vw; width: 100px; height: intrinsic;"></a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -388,7 +395,7 @@
     </section>
     <section id="contacto" class="row contacto">
         <div class="card shadow">
-            <div class="col-12">
+            <div class="row">
                 <h2 class="gradienteLogo">Contacto</h2>
             </div>
             <div class="row" style="width: 100%;">
@@ -438,7 +445,7 @@
                             </div>
                             <div class="form-group">
                               <label for="exampleFormControlTextarea1">Mensaje</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="" rows="5"></textarea>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje." rows="5"></textarea>
                             </div>
                             <br>
                             <input class="btn btn-primary" type="submit" value="Enviar">
