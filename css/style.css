@@ -371,12 +371,14 @@ nav .dropdown-item:hover {
 
 .shows .card .row .card p {
   color: #E7E6E6;
-  font-size: 18px;
-  font-family: 'Merienda', cursive;
+  font-size: 22px;
+  font-family: 'EB Garamond', serif;
+  text-shadow: 2px 2px #000000;
 }
 
 .shows .card .row .card h5 {
   font-size: 25px;
+  text-shadow: 2px 2px #000000;
 }
 
 .shows .botonAcordeon {
@@ -459,9 +461,9 @@ nav .dropdown-item:hover {
 
 .biografia p {
   color: #E7E6E6;
-  font-family: 'Merienda', cursive;
-  font-weight: 900;
-  font-size: 19px;
+  font-family: 'EB Garamond', serif;
+  text-shadow: 2px 2px #000000;
+  font-size: 22px;
 }
 
 .galeria {
@@ -482,7 +484,7 @@ nav .dropdown-item:hover {
 .galeria .carouselGaleria .carousel-caption h5 {
   font-size: calc(1em + 1vw);
   text-transform: capitalize;
-  font-family: 'Merienda', cursive;
+  font-family: 'EB Garamond', serif;
   color: #fcd95a;
 }
 

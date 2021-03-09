@@ -288,13 +288,15 @@ nav{
                 }
                 p{
                     color: #E7E6E6;
-                    font-size: 18px;
-                    font-family: 'Merienda', cursive;
+                    font-size: 22px;
+                    font-family: 'EB Garamond', serif;        
+                    text-shadow: 2px 2px #000000;
                     //font-family: 'Spartan', sans-serif;
                     // text-align: justify;
                 }
                 h5{
                     font-size: 25px;
+                    text-shadow: 2px 2px #000000;
                 }
             
             }
@@ -348,9 +350,10 @@ nav{
     }
     p{
         color: #E7E6E6;
-        font-family: 'Merienda', cursive;
-        font-weight: 900;
-        font-size: 19px;
+        font-family: 'EB Garamond', serif;
+        text-shadow: 2px 2px #000000;
+        // font-weight: 900;
+        font-size: 22px;
     }
 }
 
@@ -370,7 +373,7 @@ nav{
             h5{
                 font-size: calc(1em + 1vw);
                 text-transform: capitalize;
-                font-family: 'Merienda', cursive;
+                font-family: 'EB Garamond', serif;
                 //font-family: 'Spartan', sans-serif;
                 color: #fcd95a;
                 span{
