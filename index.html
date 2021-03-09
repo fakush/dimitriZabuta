@@ -385,9 +385,9 @@
                             <br><br>
                             Llevo su espectáculo a más de 30 países, realizándolo en 5 idiomas. 
                             <br>
-                            Se presentó en lugares como Shanghái, en la gala de la empresa ¨AliBaba¨, en el Edinburgh Fringe  (festival de Arte más grande del mundo), asi como  también ha viajado numerosas ocasiones a Rusia para actuar en eventos y apariciones en programas de TV.
+                            Se presentó en lugares como Shanghái, en la gala de la empresa ¨AliBaba¨, en el Edinburgh Fringe  (el festival de Arte más grande del mundo), asi como también ha viajado en numerosas ocasiones a Rusia para actuar en eventos y apariciones en programas de TV.
                             <br><br>
-                            Ganó el segundo puesto en el Campeonato Latinoamericano de la Magia. Y obtuvo 6to puesto en el Campeonato Mundial de Magia que se realizó en Corea del Sur. 
+                            Ganó el segundo puesto en el Campeonato Latinoamericano de Magia, y obtuvo el 6to puesto en el Campeonato Mundial de Magia que se realizó en Corea del Sur. 
                         </p>
                         <div class="separadorWrapper">
                             <img src="media/separador_1.png" class="separador" style="transform: rotate(180deg);" alt="">
@@ -411,7 +411,7 @@
                 <h5 class="textoCuerpo col-12 col-md-4" style="text-align: center;">
                     <a href="https://api.whatsapp.com/send?phone=5491168859449&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20shows.">
                     <i class="fa fa-phone-square" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i> +5491168559449</a>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i> +5491168859449</a>
                 </h5>
                 <h5 class="textoCuerpo col-12 col-md-4" style="text-align: center;">
                     <a href="https://www.facebook.com/demitri.zabuta">
@@ -434,22 +434,22 @@
                     <div class="card-body">
                         <!-- <h4 class="textoTitulo" style="font-family: 'Jura', sans-serif;">Formulario de Contacto:</h4>
                         <br> -->
-                        <form action="mailto:dimagician@gmail.com" method="post" enctype="text/plain">
+                        <form method="POST" action="mail-handler.php">
                             <div class="form-group">
-                              <label for="exampleFormControlInput1">Email</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                              <label>Email</label>
+                              <input type="text" id="Email" name="Email" class="form-control" placeholder="" maxlength="100">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Nombre</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                <label>Nombre Completo</label>
+                                <input type="text" id="Name" name="Name" class="form-control" placeholder="" maxlength="100">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Telefono</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                <label>Telefono</label>
+                                <input type="text" id="Phone" name="Phone" class="form-control" placeholder="">
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Mensaje</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje." rows="5"></textarea>
+                              <label>Mensaje</label>
+                              <textarea class="form-control" id="Message" name="Message" placeholder="Escriba su mensaje." rows="5"></textarea>
                             </div>
                             <br>
                             <input class="btn btn-primary" type="submit" value="Enviar">
@@ -461,11 +461,10 @@
                     <img src="media/fotocontacto.png" alt="Imagen del artista" class="foto" style="padding: 15px;">
                 </div>
                 <br>
-                  
             </div>
         </div>
     </section>
-</div>
+    </div>
 <!-- Boton Whastapp-->
     <a href="https://api.whatsapp.com/send?phone=5491168859449&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20shows." class="float" target="_blank">
         <img src="media/redes-whatsapp-icon.png" alt="">
