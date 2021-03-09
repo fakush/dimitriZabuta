@@ -372,7 +372,7 @@ nav .dropdown-item:hover {
 .shows .card .row .card p {
   color: #E7E6E6;
   font-size: 18px;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Merienda', cursive;
 }
 
 .shows .card .row .card h5 {
@@ -482,7 +482,7 @@ nav .dropdown-item:hover {
 .galeria .carouselGaleria .carousel-caption h5 {
   font-size: calc(1em + 1vw);
   text-transform: capitalize;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Merienda', cursive;
   color: #fcd95a;
 }
 
