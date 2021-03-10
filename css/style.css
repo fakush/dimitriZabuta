@@ -638,6 +638,13 @@ nav .dropdown-item:hover {
   margin: auto;
 }
 
+.contacto .tituloContacto {
+  margin-left: 20px;
+  color: #fcd95a;
+  text-shadow: 2px 2px #000000;
+  line-height: 1.5;
+}
+
 .contacto .card {
   width: 100%;
   background-color: #1d1e22;
@@ -651,7 +658,7 @@ nav .dropdown-item:hover {
 }
 
 .contacto .card .btn-primary {
-  background: -webkit-linear-gradient(#ffe201, #fec30d);
+  background-color: #fcd95a;
   border: #0A0A0A;
   font-weight: 900;
   color: #0A0A0A;

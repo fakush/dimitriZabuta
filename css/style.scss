@@ -569,6 +569,12 @@ nav{
     background-image: url('../media/whirlpool.png');
     padding: 1vw;
     margin: auto;
+    .tituloContacto{
+        margin-left: 20px;
+        color: #fcd95a;
+        text-shadow: 2px 2px #000000;
+        line-height: 1.5;
+    }
     .card{
         width: 100%;
         background-color: #1d1e22;
@@ -579,7 +585,8 @@ nav{
             font-size: medium;
         }
         .btn-primary{
-            background: -webkit-linear-gradient(#ffe201, #fec30d);
+            //background: -webkit-linear-gradient(#ffe201, #fec30d);
+            background-color: #fcd95a;
             border: #0A0A0A;
             font-weight: 900;
             color: #0A0A0A;
